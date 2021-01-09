@@ -31,7 +31,8 @@ Remember that it should also console log when receiving 0 as a parameter because
 condition is checked. */
 
 function doWhileLoop(num) {
-  function incrementVariable(i) {
+  i = 0;
+  function incrementVariable() {
     i = i + 1;
   return i;
   }
@@ -39,5 +40,5 @@ function doWhileLoop(num) {
 
 do {
   console.log("I run once regardless.");
-} while (incrementVariable(i) < num);
+} while (incrementVariable() < num);
 }
