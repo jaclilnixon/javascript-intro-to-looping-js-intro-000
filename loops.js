@@ -30,8 +30,8 @@ something like incrementVariable() < num.)
 Remember that it should also console log when receiving 0 as a parameter because the do-while runs before the
 condition is checked. */
 
-function doWhileLoop(i) {
-  function incrementVariable() {
+function doWhileLoop(num) {
+  function incrementVariable(i) {
     i = i + 1;
   return i;
   }
@@ -39,5 +39,5 @@ function doWhileLoop(i) {
 
 do {
   console.log("I run once regardless.");
-} while (incrementVariable() < i);
+} while (incrementVariable() < num);
 }
